@@ -11,18 +11,8 @@ std::string removeLeadingSpaces(std::string line){
 	return newLine;
 }
 bool foundOpenCerly(std::string line){
-	if(line.find('{') != -1){
-		return true;
-	}
-	else{
-		return false;
-	}
+	return line.find('{') != -1;
 }
 bool foundCloseCerly(std::string line){
-	if(line.find('}') != -1){
-		return true;
-	}
-	else{
-		return false;
-	}
+	return line.find('}') != -1;
 }
